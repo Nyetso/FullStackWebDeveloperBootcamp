@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text</title>
+    <style>
+        /* 
+        font-family - font-name to be used
+        font-size - size of font
+        font-style - italics, normal, oblique
+        font-weight - bold, light, medium
+        
+        text-transform - uppercase, lowercase
+        text-decoration - underline, overline
+        text-shadow - add shadow
+        */
+        p {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            line-height: 2em;
+            letter-spacing: 0.2em;
+            word-spacing: 1em;
+
+            font-style: italic;
+            font-weight: bold;
+            text-transform: uppercase;
+
+            text-indent: 100px;
+            text-shadow: 1px 1px 0px red;
+        }
+        p::first-letter {
+            font-size: 200%;
+        }
+        p::first-line {
+            text-shadow: none;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to 
+        make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, 
+        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing 
+        Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions 
+        of Lorem Ipsum.</p>
+</body>
+</html>

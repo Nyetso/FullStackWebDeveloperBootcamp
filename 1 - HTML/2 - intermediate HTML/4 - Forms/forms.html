@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Elements</title>
+</head>
+<body>
+    <h1>Form Basic Elements</h1>
+    <form>
+        <fieldset>
+            <legend>Input Box Elements</legend>
+            <p>
+                <label for="input_text">Text: </label>
+                <input id="input_text" type="text" placeholder="Text">
+            </p>
+            <p>
+                <label for="input_email">Text: </label>
+                <input id="input_email" type="email" placeholder="test@domain.com">
+            </p>
+            <p>
+                <label for="input_password">Text: </label>
+                <input id="input_password" type="password" placeholder="Password">
+            </p>
+            <p>
+                <label for="input_number">Text: </label>
+                <input id="input_number" type="number" placeholder="Number">
+            </p>
+            <p>
+                <label for="input_phonenumber">Text: </label>
+                <input id="input_phonenumber" type="tel" placeholder="(999) 999999">
+            </p>
+            <p>
+                <label for="input_url">Text: </label>
+                <input id="input_url" type="url" placeholder="http://somesite.com">
+            </p>
+            <p>
+                <label for="input_search">Text: </label>
+                <input id="input_search" type="search" placeholder="Search...">
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Select Form Element</legend>
+            <p>
+                <label for="select">Select</label>
+                <select id="select">
+                    <optgroup label="Option group 1">
+                        <option>Option one</option>
+                        <option>Option Two</option>
+                        <option>Option Three</option>
+                    </optgroup>
+                    <optgroup label="Option group 2">
+                        <option>Option one</option>
+                        <option>Option Two</option>
+                        <option>Option Three</option>
+                    </optgroup>
+                </select>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Radio Button element</legend>
+            <p>
+                <ul>
+                    <li>
+                        <label for="radio_option1">Option 1:</label>
+                        <input id="radio_option1" name="radio" type="radio" checked>
+                    </li>
+                    <li>
+                        <label for="radio_option2">Optiann 2:</label>
+                        <input id="radio_option2" name="radio" type="radio" checked>
+                    </li>
+                </ul>
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>

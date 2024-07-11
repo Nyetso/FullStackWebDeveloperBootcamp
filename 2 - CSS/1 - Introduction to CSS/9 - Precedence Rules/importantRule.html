@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precedence</title>
+    <style>
+        /* h1 {
+            color: blue;
+        }
+        p {
+            color: green;
+        }
+        h1, p {
+            color:red;
+        }
+        div {
+            color: red;
+        }
+
+        #text-blue {
+            color: blue;
+        }
+
+        .text-green {
+            color: green;
+        }
+        div#text-blue {
+            color: lightblue;
+        } */
+         body {
+            color:red;
+         }
+         h1 {
+            color: red!important; /* cannot be overwrite */
+         }
+         p { 
+            color: red;
+         }
+         #text-red {
+            color: red;
+         }
+         .text-red {
+            color:red;
+         }
+         h1#text-red {
+            color:red;
+         }
+         h1.text-red {
+            color: red;
+         }
+    </style>
+</head>
+    <!-- always the last style is applied -->
+    <h1 style="color:green;" class="text-red" id="text-red">Heading</h1>
+    <p>Paragraph Text</p>
+</body>
+</html>

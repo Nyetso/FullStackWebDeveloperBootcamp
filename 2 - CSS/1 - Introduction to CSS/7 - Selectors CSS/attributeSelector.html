@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector</title>
+    <style type="text/css">
+        /* 
+        attribute selector
+        selector[class] {
+            (property 1: value 1) =>declaration
+            (property 2: value 2) =>declaration
+        }
+        */
+        p[class] {
+            color: red;
+            font-weight: bold;
+        }
+        p[class=color-blue] {
+            color: blue;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <p>Paragraph Text - no class</p>
+    <p class="">Paragraph Text - with class</p>
+    <p class="color-blue">Paragraph Text - with class</p>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector</title>
+    <style type="text/css">
+        /* 
+        separated by a 'space'
+        decendent-selector child-selector
+        selector>selector {
+            (property 1: value 1) =>declaration
+            (property 2: value 2) =>declaration
+        }
+        */
+        body a {
+            color: red;
+            font-weight: bold;
+        }
+        p[class=color-blue] {
+            color: blue;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <p>Paragraph Text - no child selector</p>
+    <p class="">Paragraph Text - <a href="#">with child selector</a></p>
+    <p class="color-blue">Paragraph Text - with class</p>
+</body>
+</html>
