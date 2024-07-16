@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floating Box</title>
+    <style>
+        h1 {
+            text-align: center;
+            text-decoration: underline;
+        }
+        img {
+            margin-right: 20px;
+        }
+        .float-left {
+            float: left;
+        }
+        .float-right {
+            float: right;
+        }
+        .clearfix::after {
+            content: ".";
+            display: block;
+            clear: both;
+            height: 0;
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <h1>Images</h1>
+    <div class="clearfix">
+        <img class="float-left" src="/2 - CSS/2 - Intermediate CSS/2 - Floating Box/26a9fe0076a048e0c0986753e41529b0.jpeg" width="200px" height="150px">
+        <p>This is an image</p>
+    </div>
+    <div class="clearfix">
+        <img class="float-right" src="/2 - CSS/2 - Intermediate CSS/2 - Floating Box/26a9fe0076a048e0c0986753e41529b0.jpeg" width="200px" height="150px">
+        <p>This is an image</p>
+    </div>
+</body>
+</html>

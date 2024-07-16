@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Example</title>
+    <style>
+        .container {
+            background: rgba(0,0,0,4);
+            height: 250px;
+            width: 250px;
+            margin-left: 300px;
+            margin-top: 150px;
+            color: white;
+        }
+        .box {
+            height: 150px;
+            width: 150px;
+            background-color: gray;
+            top: 50px;
+            left: 50px;
+            position: absolute;
+            color: white;
+        }
+        .box2 {
+            height: 150px;
+            width: 150px;
+            background-color: gray;
+            top: 50px;
+            left: 50px;
+            /* position: absolute; */
+            color: white;
+        }
+        .box3 {
+            height: 150px;
+            width: 150px;
+            background-color: gray;
+            top: 50px;
+            left: 50px;
+            position: relative;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        CONTAINER
+        <div class="box">
+            BOX / absolute
+        </div>
+    </div>
+    <div class="container">
+        CONTAINER
+        <div class="box2">
+            BOX / no positioning
+        </div>
+    </div>
+    <div class="container">
+        CONTAINER
+        <div class="box3">
+            BOX / relative / position from the parent
+        </div>
+    </div>
+</body>
+</html>
