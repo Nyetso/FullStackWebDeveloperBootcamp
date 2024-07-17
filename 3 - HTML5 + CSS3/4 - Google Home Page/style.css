@@ -1,0 +1,57 @@
+body {
+    font-family: Roboto;
+}
+header {
+    display: inline;
+}
+header ul {
+    text-align: right;
+}
+header li, a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px;
+}
+header a:hover {
+    text-decoration: underline;
+}
+header img {
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+footer nav {
+    display: flex;
+    justify-content: space-between;
+}
+footer nav li, a {
+    display: inline-block;
+}
+footer nav a:hover {
+    text-decoration: underline;
+}
+footer p {
+    margin-left: 44px;
+}
+section {
+    text-align: center;
+}
+section h1 {
+    text-align: center;
+    font-size: 6rem;
+}
+.search {
+    border-radius: 50px;
+    width: 600px;
+    height: 50px;
+}
+.bahasa {
+    font-size: 0.8rem;
+}

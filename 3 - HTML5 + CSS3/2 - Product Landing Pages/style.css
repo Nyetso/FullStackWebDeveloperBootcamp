@@ -1,0 +1,91 @@
+nav {
+    display: flex;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+nav li, a {
+    list-style-type: none;
+    text-decoration: none;
+    padding: 5px;
+}
+button {
+    background-color: orangered;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+}
+.container {
+    text-align: center;
+    padding: 50px;
+    background-image: url('/3\ -\ HTML5\ +\ CSS3/2 - Product Landing Pages/abstract-colourful-backdrop-oil-waves-water-surface_23-2148290149.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+.container2 {
+    text-align: center;
+    padding: 50px;
+    margin: 0;
+    display: flex;
+    height: 500px;
+}
+.container2 ul{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.container2 li {
+    list-style-type: none;
+    text-decoration: none;
+    padding: 5px;
+}
+.h2-border {
+    border: 1px solid white;
+    width: 300px;
+    border-radius: 50px;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: white;
+}
+h1 {
+    color: white;
+    font-size: 3.5rem;
+}
+p {
+    color: white;
+    font-size: 1.25rem;
+}
+h2 {
+    color: darkblue;
+    text-align: center;
+}
+.reviews {
+    display: flex;
+    background-color: lightgray;
+}
+.reviews ul {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+.reviews li {
+    color: darkblue;
+    list-style-type: none;
+    padding: 15px;
+}
+.bestseller {
+    background-color: aquamarine;
+    font-size: 1rem;
+    color: black;
+    border-radius: 5px;
+    align-items: center;
+    padding: 5px;
+}
+footer {
+    background-color: rgba(15, 1, 1, 0.659);
+    color: white;
+    text-align: center;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        /* *, *:before, *:after {
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        } */
+        body {
+            background-color: #0087E2;
+            color: white;
+            text-align: center;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .withborderbox {
+            width: 300px;
+            height: 100px;
+            border: 1px solid white;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .withoutborderbox {
+            width: 300px;
+            height: 100px;
+            padding: 10px;
+            border: 1px solid white;
+        }
+    </style>
+</head>
+<body>
+    <div class="withborderbox">with border box / does not allow the box to grow when added padding</div>
+    <div class="withoutborderbox">without border box</div>
+</body>
+</html>
