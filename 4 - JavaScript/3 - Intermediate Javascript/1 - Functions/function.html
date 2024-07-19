@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions Javascript</title>
+    <script>
+        var sum = 0;        
+        function add (a, b) {
+            sum = a+b;
+            return sum;
+        }
+
+        var size = function (width, height){
+            return width * height;
+        }
+    </script>
+</head>
+<body>
+    <h1>Heading</h1>
+    <!-- <a href="#" onclick="alert(sum(2,5));">Add function!</a><br>
+    <a href="#" onclick="alert(sum(10,5));">Area function!</a> -->
+    <script>
+        var input1 = 0;
+        input1 = prompt("Enter first value:");
+        var input2 = 0;
+        input2 = prompt("Enter second value:");
+        document.write("The sum is: " + add(input1, input2) + "<br>");
+        document.write("The Area is: " + size(input1, input2));
+    </script>
+</body>
+</html>

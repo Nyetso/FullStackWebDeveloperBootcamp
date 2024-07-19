@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects Javascript</title>
+    <script>
+        // function show () {
+        //     var txtname = document.getElementById("txtname1").value;
+        //     alert(txtname);
+        // }
+
+        function update () {
+            document.getElementById("txtvalue").innerHTML=
+            document.getElementById("txtname1").value;
+        }
+    </script>
+</head>
+<body>
+    <h1>Heading</h1>
+    <p id="txtvalue"></p>
+    <form>
+        <input type="text" id="txtname1" onkeypress="update();">
+        <!-- <input type="button" onclick="show();" value="Show Value"> -->
+    </form>
+</body>
+</html>
