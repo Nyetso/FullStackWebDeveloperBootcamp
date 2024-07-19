@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script>
+        var message = "";
+
+        function addition() {
+            const input1 = parseInt(document.getElementById('value1').value);
+            const input2 = parseInt(document.getElementById('value2').value);
+            const results = input1 + input2;
+            message += "Results of addition: " + results + "<br>";
+            document.getElementById('result').innerHTML = message;
+        }
+
+        function substraction() {
+            const input1 = parseInt(document.getElementById('value1').value);
+            const input2 = parseInt(document.getElementById('value2').value);
+            const results = input1 - input2;
+            message += "Results of substraction: " + results + "<br>";
+            document.getElementById('result').innerHTML = message;
+        }
+
+        function multiply() {
+            const input1 = document.getElementById('value1').value;
+            const input2 = document.getElementById('value2').value;
+            const results = input1*input2;
+            message += "Results of multiplication: " + results + "<br>";
+            document.getElementById('result').innerHTML = message;
+        }
+
+        function divide() {
+            const input1 = document.getElementById('value1').value;
+            const input2 = document.getElementById('value2').value;
+            const results = input1/input2;
+            message += "Results of division: " + results + "<br>";
+            document.getElementById('result').innerHTML = message;
+        }
+    </script>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <form action="#">
+        <input type="number" name="value1" id="value1">
+        <input type="number" name="value2" id="value2">
+        <br><br>
+        <input type="button" name="add" value="Addition" onclick="addition();">
+        <input type="button" name="substract" value="Substraction" onclick="substraction();">
+        <input type="button" name="multiplication" value="Multiplication" onclick="multiply();">
+        <input type="button" name="division" value="Division" onclick="divide();">
+    </form>
+    <br>
+    <p id="result"></p>
+</body>
+</html>

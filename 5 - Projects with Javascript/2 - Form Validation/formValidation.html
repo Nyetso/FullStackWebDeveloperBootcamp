@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Browser URL Javascript</title>
+    <script>
+        function checkFormData() {
+            var message = "Form Elements" + "<br>" +"<br>";
+            var tname = document.getElementById('txt_name').value;
+            var temail = document.getElementById('txt_email').value;
+            var tage = document.getElementById('txt_age').value;
+
+            // Access radio button value
+            var tgender1 = document.getElementById('radio1').checked;
+            var tgender2 = document.getElementById('radio2').checked;
+
+            // Access Checkbox
+            var chkbox = document.getElementById('chkbox').checked;
+
+            message += "Name: " + tname + "<br>";
+            message += "Email: " + temail + "<br>";
+            message += "Age: " + tage + "<br>";
+            message += "Male: " + tgender1 + "<br>";
+            message += "Female: " + tgender2 + "<br>";
+            message += "Agreed: " + chkbox + "<br>";
+
+            document.getElementById('tmessage').innerHTML = message;
+        }
+    </script>
+</head>
+<body>
+    <p id="tmessage"></p>
+    <h1>Form Validations</h1>
+    <form action="#" method="get">
+        Your Name: <input type="text" name="tname" id="txt_name">
+        <br><br>
+        Your Email: <input type="text" name="temail" id="txt_email">
+        <br><br>
+        Your Age: <input type="text" name="tage" id="txt_age">
+        <br><br>
+
+        Male <input type="radio" name="gender" id="radio1">
+        Female <input type="radio" name="gender" id="radio2">
+        <br><br>
+
+        <input type="checkbox" name="#" id="chkbox">
+        Agree to our Terms
+        <br><br>
+        <input type="button" name="submit" value="Submit"
+        onclick="checkFormData();">
+    </form>
+</body>
+</html>
