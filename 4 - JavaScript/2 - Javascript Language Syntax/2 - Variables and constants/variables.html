@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+    <script>
+        //Declaring a variable
+        var message;
+
+        //Initialize the variable with empty string
+        message = "";
+
+        //Assign the value to a variable
+        message = "Hello, This is a variable!";
+
+        //Display the variable
+        alert(message);
+        console.log(message); //log the variable
+
+        var counter = 0;
+        alert("Counter before: " + counter);
+        message = "Counter before: " + counter;
+        console.log(message);
+
+        counter = 100;
+        alert("Counter after: " + counter);
+        message = "Counter after: " + counter;
+        console.log(message);
+
+        const PI = 3.142;
+        alert(PI);
+    </script>
+
+</head>
+<body>
+    <h1>Variables and Constants</h1>
+    <script>
+        document.write("Your message: " + message);
+    </script>
+    <p>Paragraph Text</p>
+    <ul>
+        <li><a href="#" onclick="alert('You have clicked item 1')">Item 1</a></li>
+        <li><a href="#" onclick="Alert('You have clicked item 2')">Item 2</a></li> <!--ERROR-->
+        <li><a href="#" onclick="alert('You have clicked item 3')">Item 3</a></li>
+    </ul>
+</body>
+</html>
